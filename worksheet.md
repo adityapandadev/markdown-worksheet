@@ -29,15 +29,23 @@ Headers are defined by the '#'symbol.  One '#' for H1, two for H2, etc.
 
     # H1 Header 
 -->
-> **TODO**. Create an H1 
+> **TODO**. Create an H1
+
+# Heading 1
 
 > **TODO**. Create an H2 
 
+## Heading 2
+
 > **TODO**. Create an H3 
+
+### Heading 3
 
 > **TODO**. Create an H4 
 
----
+#### Heading 4
+
+***
 
 ## Quotes
 
@@ -52,6 +60,8 @@ Quotes are defined by the  '>' symbol
 
 > **TODO**. Create a quote
 
+> Great work requires great determinations
+
 You can combine a header with a quote.
 
 <!-- 
@@ -61,6 +71,8 @@ You can combine a header with a quote.
 -->
 
 > **TODO**. Create an H2 Quote 
+
+> ## header 2 quote
 
 ---
 
@@ -94,6 +106,12 @@ You can also put Bold and Italicized text inline by surrounding a group of words
 
 > **TODO**. Create a bold sentence, an italicized sentence, and a sentence with both bold and italicized text inline
 
+**Bold text**
+
+_Italic text_
+
+This sentence contains one **Bold** and one _Italic_ text.
+
 ## Horizontal Rule
 A horizontal rule gives a visible line break.  You can create one by putting three or more hypens, asterisks, or underscores (-, *, _).
 
@@ -108,6 +126,7 @@ For what it's worth, I prefer dashes...
 -->
 
 > **TODO** Create a horizontal rule
+---
 
 ---
 
@@ -143,8 +162,20 @@ Create ordered lists using a number prefix
 
 > **TODO** Create an unordered list of your 5 favorite TV Shows 
 
+- Friends
+- Dark
+- Stranger Things
+- Game of thrones
+- The end of the Fucking World
+
 > **TODO** Create an ordered list of your top 5 Movies 
 
+1. Adventureland
+2. Twilight series
+   - twilight saga
+3. Notebook
+4. Love and Other Drugs
+5. Love Rosie
 ---
 
 ## Links
@@ -166,7 +197,11 @@ Create a link with text by surrounding text with brackets, [], and link immediat
 
 > **TODO** Create a link to your website, twitter, or github. with no text
 
+<https://aditya-portfolio-neogcamp.netlify.app>
+
 > **TODO** Create a link with text to your website, twitter, or github
+
+[My Portfolio](https://aditya-portfolio-neogcamp.netlify.app "Aditya Panda")
 
 What if you needed to reuse a link several times?  Well, you could copy and paste that link each time.  That means, if you need to update the link, you will have to do it each time its used.  There's a better way!
 
@@ -188,6 +223,16 @@ Then use the reference style link by using your text inside of brackets followed
 
 > **TODO** Create a reference link to your website and reference it three times
 
+[1]: https://aditya-portfolio-neogcamp.netlify.app
+
+[Me on the Web][1]
+
+[portfolio][1]
+
+[My Website][1]
+
+
+
 You can also link to other locations on your markdown page.  Remember, your MarkDown will get converted to HTML, so you can, in theory, use a anchor tag to link to an element with a specific ID.  You can find an example of this in the list of sections at the top of this document.
 
 When we create a header tag for example, it implicitly creates an id property.
@@ -200,6 +245,8 @@ Ex 'Header Info' becomes header-info
 
 > **TODO** Create a link to another part of your page.
 
+
+[click to go on the link](#links)
 
 ---
 
@@ -233,6 +280,9 @@ Use the reference
 
 > **TODO** Create a reference link to your profile picture and then reference it.
 
+
+![images](screenshot.png)
+
 ---
 
 ## Code
@@ -240,6 +290,8 @@ Use the reference
 You can do inline code with `backticks` (``)
 
 > **TODO** Display a line of text with inline code
+
+to declare a variable in javasript `var variable=10`
 
 You can do blocks of code by surroung it with 3 backticks (``` ```)
 
@@ -253,6 +305,13 @@ You can do blocks of code by surroung it with 3 backticks (``` ```)
 -->
 
 > **TODO** Display a block of code from your favorite language
+
+```
+var name = "Aditya Panda"
+
+console.log(name)
+
+```
 
 The above does not give language specific highlighting.  You can specify the programming language immediately following the opening 3 backticks.  You Should see a difference in highliting!
 
@@ -277,6 +336,13 @@ The above does not give language specific highlighting.  You can specify the pro
 -->
 
 > **TODO** Display a block of code from your favorite language while specifying the language
+
+```javascript
+
+var name = "Aditya Panda"
+console.log(name)
+
+```
 
 
 ---
@@ -313,9 +379,19 @@ The column definitions and row definitions do not have to have the exact same wi
 
 > **TODO** Create a table with three columns and two rows
 
+| column 1 | column 2 | column 3 |
+|----------|----------|----------|
+|matter 1  | matter 2 | matter 3|
+|matter 4  | matter 5|  matter 6 |
+
 You can also align (Center, left, right) the text in a column by using colons (:) in the line breaks between headers and rows.  No colon means the default **left alignment**.  Colons on each side signifies **center alignment**.  And a trailing colon means **right alignment**.
 
 > **TODO** Create a table with three columns, one aligned left, one aligned center, and one aligned right
+
+| column 1 | column 2 | column 3 |
+|----------|:----------:|----------:|
+|matter 1  | matter 2 | matter 3|
+|matter 4  | matter 5|  matter 6 |
 
 <!-- 
     Example
@@ -341,6 +417,15 @@ Creates this
 <p>Sample HTML Div</p>
 
 > **TODO** If you are comfortable with HTML, add some raw HTML.
+
+```html
+
+<div>
+    <h1>This is worksheet is really good</h1>
+    <p>this is working fine</p>
+</div>
+
+```
 
 ---
 
